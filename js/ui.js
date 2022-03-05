@@ -1,5 +1,7 @@
 let array = [];
 
+
+
 const showButton = () =>{
     const button = document.getElementById("done-button");
     button.classList.remove("hidden");

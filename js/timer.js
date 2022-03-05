@@ -1,5 +1,14 @@
 const timeField = document.getElementById('timer')
 
+const playsound = function(id){
+    let volume = 0.8;
+    link = `./sounds/${id}.wav`;
+    const audio = document.createElement('audio');
+    audio.src = link;
+    audio.volume = volume;
+    audio.play();
+};
+
 //time reamining in 1/10th of a seconds (tr = 10 means 1 second)
 let dateobject = new Date()
 var day = parseInt(dateobject.getDate().toString().slice(-1));
@@ -16,9 +25,11 @@ const refresh = () => {
 
     timeField.innerText = timerText
     document.title = `Fitness App ${playingText} (${timerText})`
+    
 }
 
 const play = () =>{
+    playsound('click')
     if(!playing)
         playing = true
     else
@@ -35,13 +46,20 @@ const play = () =>{
         }
 
         timeRemaining -= 1
+        
         refresh()
     }, 100)
+
+    soundinterval = setInterval(() => {
+        playsound('tick');
+    }, 1000);
 }
 
 const pause = () => {
     console.log('Stopping timer')
     clearInterval(interval)
+    clearInterval(soundinterval)
+    playsound('win')
     playing = false
     refresh()
 }
