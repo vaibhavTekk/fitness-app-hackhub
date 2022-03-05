@@ -40,7 +40,7 @@ if (localStorage.getItem('array')){
         displayScore();
     }
 } else {
-    const newarray = ["first item"]
+    const newarray = [];
     localStorage.setItem('array' , JSON.stringify(newarray))
     array = JSON.parse(localStorage.getItem('array'));   
 }    
