@@ -9,13 +9,23 @@ const showButton = () =>{
 const submit = () => {
     const dateobject = new Date();
     var date = dateobject.toDateString();
-    array.push(date);
-    localStorage.setItem('array',JSON.stringify(array));
-    displayScore();
+    if(JSON.parse(localStorage.getItem('array')).slice(-1).pop() == date){
+        displayScore();
+    }
+    else {
+        array.push(date);
+        localStorage.setItem('array',JSON.stringify(array));
+        displayScore();
+    }
+
 };
 
 const displayScore = () => {
     document.getElementById("popup").classList.remove("hidden");
+};
+
+const hideScore = () => {
+    document.getElementById("popup").classList.add("hidden");
 };
 
 window.onload = function() {
@@ -26,17 +36,20 @@ window.onload = function() {
     document.getElementById("description").innerHTML = data[day].description;
     document.getElementById('timer').innerText = data[day].duration;
     document.getElementById('today').innerText = `${dateobject.getDate()} / ${dateobject.getMonth() + 1} / ${dateobject.getFullYear()}`
-    
+    refresh();
 }
 
 if (localStorage.getItem('array')){
     array = JSON.parse(localStorage.getItem('array'));
     const todayDate = new Date();
     console.log(array);
-    if (array[-1] == todayDate.toDateString()) {
+    if (array.slice(-1).pop() != todayDate.toDateString()) {
         console.log();
     } else {
         console.log("Already done for today");
+        timeRemaining = 0;
+        refresh();
+        showButton();
         displayScore();
     }
 } else {
@@ -44,6 +57,8 @@ if (localStorage.getItem('array')){
     localStorage.setItem('array' , JSON.stringify(newarray))
     array = JSON.parse(localStorage.getItem('array'));   
 }    
+
+
 
 
 
