@@ -1,7 +1,5 @@
-/*
-! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
-*/
 
+<<<<<<< HEAD
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -726,3 +724,5 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 75%;
   }
 }
+=======
+>>>>>>> 167f854010d3c03c4b30eb3c60875af79443786a
