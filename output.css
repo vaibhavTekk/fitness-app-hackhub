@@ -1,7 +1,5 @@
-/*
-! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
-*/
 
+<<<<<<< HEAD
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -502,8 +500,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
-.mr-6 {
-  margin-right: 1.5rem;
+.mr-1 {
+  margin-right: 0.25rem;
 }
 
 .flex {
@@ -526,24 +524,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
-.h-\[60\%\] {
-  height: 60%;
+.h-\[256px\] {
+  height: 256px;
 }
 
 .h-8 {
   height: 2rem;
-}
-
-.h-\[50\%\] {
-  height: 50%;
-}
-
-.h-\[512px\] {
-  height: 512px;
-}
-
-.h-\[256px\] {
-  height: 256px;
 }
 
 .w-full {
@@ -558,24 +544,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 80%;
 }
 
-.w-\[60\%\] {
-  width: 60%;
+.w-\[256px\] {
+  width: 256px;
 }
 
 .w-\[85\%\] {
   width: 85%;
 }
 
+.w-9\/12 {
+  width: 75%;
+}
+
 .w-8 {
   width: 2rem;
-}
-
-.w-\[512px\] {
-  width: 512px;
-}
-
-.w-\[256px\] {
-  width: 256px;
 }
 
 .flex-row {
@@ -588,6 +570,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -646,16 +632,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
-}
-
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .object-scale-down {
@@ -733,6 +709,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@media (min-width: 640px) {
+  .sm\:mr-3 {
+    margin-right: 0.75rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:w-1\/3 {
     width: 33.333333%;
@@ -742,3 +724,5 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 75%;
   }
 }
+=======
+>>>>>>> 167f854010d3c03c4b30eb3c60875af79443786a
