@@ -494,40 +494,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
-.h-8 {
-  height: 2rem;
-}
-
 .h-auto {
   height: auto;
 }
 
-.w-\[1\/3\] {
-  width: 1 / 3;
+.h-8 {
+  height: 2rem;
 }
 
 .w-\[80\%\] {
   width: 80%;
 }
 
-.w-\[75\%\] {
-  width: 75%;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
 .w-auto {
   width: auto;
 }
 
-.w-1\/3 {
-  width: 33.333333%;
+.w-\[85\%\] {
+  width: 85%;
 }
 
-.w-\[60\%\] {
-  width: 60%;
+.w-8 {
+  width: 2rem;
 }
 
 .flex-row {
@@ -648,30 +636,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@media (min-width: 640px) {
-  .sm\:w-\[80\%\] {
-    width: 80%;
-  }
-
-  .sm\:w-1\/3 {
-    width: 33.333333%;
-  }
-}
-
 @media (min-width: 768px) {
-  .md\:w-\[80\%\] {
-    width: 80%;
-  }
-
-  .md\:w-\[50\%\] {
-    width: 50%;
-  }
-
-  .md\:w-\[1\/3\] {
-    width: 1 / 3;
-  }
-
   .md\:w-1\/3 {
     width: 33.333333%;
+  }
+
+  .md\:w-\[75\%\] {
+    width: 75%;
   }
 }
