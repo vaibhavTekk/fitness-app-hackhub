@@ -1,7 +1,9 @@
 const timeField = document.getElementById('timer')
 
 //time reamining in 1/10th of a seconds (tr = 10 means 1 second)
-let timeRemaining = 100
+let dateobject = new Date()
+var day = parseInt(dateobject.getDate().toString().slice(-1));
+let timeRemaining = (parseInt(data[day].duration.substring(0,2))*60 + parseInt(data[day].duration.substring(3,5)))*10;
 let interval;
 let playing = false
 
