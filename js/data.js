@@ -42,7 +42,7 @@ const data = [
         day: "6",
         exercise : "do jumping jacks for 3 minutes",
         description : "A push-up is a common calisthenics exercise beginning from the prone position.",
-        duration : "03:00",
+        duration : "00:10",
         location : "./img/jumpingjack.gif",
     },
     {

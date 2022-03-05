@@ -1,7 +1,7 @@
 const timeField = document.getElementById('timer')
 
 //time reamining in 1/10th of a seconds (tr = 10 means 1 second)
-let timeRemaining = 1800
+let timeRemaining = 100
 let interval;
 let playing = false
 
@@ -27,6 +27,7 @@ const play = () =>{
     interval = setInterval(() => {
         if(timeRemaining == 0){
             console.log('Time is up.')
+            showButton()
             pause()
             return
         }
