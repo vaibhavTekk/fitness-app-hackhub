@@ -24,6 +24,7 @@ const submit = () => {
 
 const displayScore = () => {
     document.getElementById("popup").classList.remove("hidden");
+    document.getElementById("days").innerText = `${array.length} Day(s)`;
 };
 
 const hideScore = () => {
